@@ -1,0 +1,152 @@
+/* Γενικές ρυθμίσεις για το root pane */
+.root {
+    -fx-background-color: #f4f4f4; /* Απαλό γκρι φόντο */
+    -fx-padding: 10px; /* Εσωτερικό περιθώριο */
+}
+
+/* Στυλ για τις ετικέτες (labels) */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333; /* Σκούρο γκρι κείμενο */
+}
+
+/* Στυλ για τα κουμπιά */
+.button {
+    -fx-background-color: #0078d7; /* Μπλε φόντο */
+    -fx-text-fill: white; /* Λευκό κείμενο */
+    -fx-font-weight: bold; /* Έντονα γράμματα */
+    -fx-padding: 8px 16px; /* Εσωτερικά περιθώρια */
+    -fx-background-radius: 5px; /* Στρογγυλεμένες γωνίες */
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #005bb5; /* Σκουρότερο μπλε */
+    -fx-cursor: hand; /* Δρομέας χεριού */
+}
+
+/* Στυλ για τα πεδία κειμένου (TextField) */
+.text-field {
+    -fx-background-color: #ffffff; /* Λευκό φόντο */
+    -fx-border-color: #cccccc; /* Γκρι περίγραμμα */
+    -fx-border-radius: 3px; /* Ελαφρώς στρογγυλεμένες γωνίες */
+    -fx-padding: 5px; /* Εσωτερικό περιθώριο */
+}
+
+.text-field:focused {
+    -fx-border-color: #0078d7; /* Μπλε περίγραμμα */
+}
+
+/* Στυλ για τα ComboBox */
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3px;
+}
+
+.combo-box:hover {
+    -fx-background-color: #f0f0f0; /* Ελαφρύ γκρι */
+}
+
+.combo-box .list-cell {
+    -fx-padding: 5px;
+}
+
+/* Στυλ για το ListView */
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-padding: 5px;
+}
+
+.list-view .list-cell {
+    -fx-padding: 5px;
+    -fx-text-fill: #333333;
+}
+
+.list-view .list-cell:hover {
+    -fx-background-color: #e6f2ff; /* Πολύ απαλό μπλε */
+}
+
+/* Στυλ για την TextArea */
+.text-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-padding: 5px;
+    -fx-text-fill: #333333;
+}
+
+.text-area:focused {
+    -fx-border-color: #0078d7;
+}
+
+/* ΝΕΑ ΣΤΟΙΧΕΙΑ */
+
+/* Στυλ για το CheckBox */
+.check-box .box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 3px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #0078d7; /* Μπλε σημάδι όταν είναι επιλεγμένο */
+}
+
+.check-box:hover .box {
+    -fx-background-color: #f0f0f0; /* Ελαφρύ γκρι στο hover */
+}
+
+/* Στυλ για το RadioButton */
+.radio-button .radio {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 50%; /* Κυκλικό σχήμα */
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: #0078d7; /* Μπλε κουκκίδα όταν είναι επιλεγμένο */
+}
+
+.radio-button:hover .radio {
+    -fx-background-color: #f0f0f0; /* Ελαφρύ γκρι στο hover */
+}
+
+/* Στυλ για το Slider */
+.slider .track {
+    -fx-background-color: #cccccc; /* Γκρι φόντο για τη γραμμή */
+    -fx-pref-height: 4px; /* Ύψος γραμμής */
+}
+
+.slider .thumb {
+    -fx-background-color: #0078d7; /* Μπλε χρώμα για το χειριστήριο */
+    -fx-background-radius: 50%; /* Κυκλικό σχήμα */
+}
+
+.slider .thumb:hover {
+    -fx-background-color: #005bb5; /* Σκουρότερο μπλε στο hover */
+}
+
+/* Στυλ για το ScrollPane */
+.scroll-pane {
+    -fx-background-color: #f4f4f4; /* Απαλό γκρι φόντο */
+    -fx-border-color: #cccccc;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: #ffffff; /* Λευκό φόντο για το περιεχόμενο */
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: #f4f4f4;
+}
+
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-color: #0078d7; /* Μπλε χρώμα για τη μπάρα κύλισης */
+    -fx-background-radius: 5px;
+}
+
+.scroll-pane .scroll-bar .thumb:hover {
+    -fx-background-color: #005bb5; /* Σκουρότερο μπλε στο hover */
+}
